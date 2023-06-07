@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #eee;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font-family: "Julius Sans One", sans-serif; }
+
+.canvas-container {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1; }
+
+.darken-bg {
+  opacity: 0; }
+
+.page {
+  position: relative;
+  z-index: 2; }
+
+.audio-desc {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.6em; }
+
+.audio-desc i {
+  cursor: pointer;
+  margin-right: 10px; }
+
+.hidden {
+  display: none; }
+
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto; }
+
+.title-page p {
+  font-size: 1em;
+  margin: 10px; }
+
+.title-page h1 {
+  font-size: 3em; }
+
+.end-page {
+  justify-content: space-around; }
+
+.arrow {
+  font-size: 3em;
+  animation: moveArrow ease-in-out infinite 3s; }
+
+@keyframes moveArrow {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, 0.2em); }
+  100% {
+    transform: translate(0, 0); } }
+.buffer {
+  display: flex;
+  flex-direction: column;
+  height: 200vh; }
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+  line-height: 40px;
+  color: #eee;
+  font-size: 1.7em;
+  opacity: 0;
+  cursor: pointer;
+  height: fit-content; }
+
+.popup {
+  position: absolute;
+  top: 100%;
+  font-size: 0.5em;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+  background-color: rgba(131, 155, 223, 0.3);
+  animation: showPopup 1s ease-in-out;
+  text-align: center;
+  line-height: 25px; }
+
+.popup-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(131, 155, 223, 0.3) transparent transparent transparent;
+  transform: rotate(180deg); }
+
+@keyframes showPopup {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.text1 {
+  animation: easeIn 3s infinite; }
+
+.text1:hover {
+  animation: none; }
+
+@keyframes easeIn {
+  0% {
+    font-size: 1.75em; }
+  50% {
+    font-size: 1.8em; }
+  100% {
+    font-size: 1.75em; } }
+.text1 {
+  top: 60%;
+  right: 20%; }
+
+.text2 {
+  top: 70%;
+  left: 55%; }
+
+.text3 {
+  top: 20%;
+  left: 30%; }
+
+.text4 {
+  top: 30%;
+  left: 5%; }
+
+.text5 {
+  top: 5%;
+  left: 43%; }
+
+.text6 {
+  top: 15%;
+  left: 55%; }
+
+.text7 {
+  top: 20%;
+  left: 8%; }
+
+.text8 {
+  top: 60%;
+  left: 65%; }
+
+a {
+  color: #eee;
+  text-decoration: underline; }
+
+.info-links li {
+  margin: 40px; }
+
+a:visited {
+  color: #eee;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */
